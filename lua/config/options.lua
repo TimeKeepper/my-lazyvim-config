@@ -8,3 +8,5 @@ vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 
 vim.opt.updatetime = 200
+
+vim.cmd("highlight Cursor gui=NONE guifg=bg guibg=#ffb6c1")
