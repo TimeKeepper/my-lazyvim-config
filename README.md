@@ -29,3 +29,9 @@ git clone git@github.com:TimeKeepper/my-lazyvim-config.git ~/.config/nvim
 nvim
 ```
 
+# Config
+- rust
+```bash
+rustup component add rust-analyzer
+```
+
