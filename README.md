@@ -35,3 +35,8 @@ nvim
 rustup component add rust-analyzer
 ```
 
+# Keymap
+- general <https://www.lazyvim.org/keymaps>
+
+- Important
+
