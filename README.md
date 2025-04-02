@@ -30,6 +30,16 @@ nvim
 ```
 
 # Config
+- copilot
+```bash
+curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash - && sudo apt-get install -y nodejs
+```
+```nvim
+copilot enable
+copilot auth
+```
+
+
 - rust
 ```bash
 rustup component add rust-analyzer
