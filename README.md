@@ -30,13 +30,31 @@ nvim
 ```
 
 # Config
+- basic
+```bash
+cargo install fd-find # for telescope
+```
+
 - rust
 ```bash
 rustup component add rust-analyzer
 ```
 
 # Keymap
-- general <https://www.lazyvim.org/keymaps>
+## general <https://www.lazyvim.org/keymaps>
 
-- Important
+## Important
 
+### Buffer
+- <leader> bD remove current buffer
+
+### Windows
+- <leader> | spilit window Right
+- <leader> - spilit window below
+
+### Other
+- <leader> gg open lazygit(need to install)
+
+### UI
+- <leader> uD Toggle dimming
+- <leader> uz Enable Zen mode
