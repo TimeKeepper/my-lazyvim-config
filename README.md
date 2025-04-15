@@ -2,6 +2,7 @@
 my own lazyvim config.
 
 # Install
+## For linux
 ```bash
 # install neovim
 NEOVIM_VERSION=$(curl -s "https://api.github.com/repos/neovim/neovim/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
@@ -25,6 +26,22 @@ mv ~/.cache/nvim{,.bak}
 
 git clone git@github.com:TimeKeepper/my-lazyvim-config.git ~/.config/nvim
 # or https://github.com/TimeKeepper/my-lazyvim-config.git
+
+nvim
+```
+
+## For Windows
+```pwsh
+scoop install lazygit neovim mingw curl
+cargo install fd-find
+
+# required
+Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+
+# optional but recommended
+Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+
+git clone git@github.com:TimeKeepper/my-lazyvim-config.git $env:LOCALAPPDATA\nvim
 
 nvim
 ```
