@@ -3,3 +3,9 @@
 -- Add any additional options here
 
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+local opt = vim.opt
+
+opt.wrap = true
+opt.linebreak = false
+opt.spelllang = { "en", "cjk" }
