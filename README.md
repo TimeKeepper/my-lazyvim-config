@@ -1,8 +1,11 @@
 # 💤 LazyVim
+
 my own lazyvim config.
 
 # Install
+
 ## For linux
+
 ```bash
 # install neovim
 NEOVIM_VERSION=$(curl -s "https://api.github.com/repos/neovim/neovim/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
@@ -31,11 +34,12 @@ nvim
 ```
 
 ## For Windows
+
 ```pwsh
 scoop install lazygit neovim mingw curl
 cargo install fd-find
 
-# required
+# required(You may need to create the path)
 Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
 
 # optional but recommended
@@ -47,41 +51,50 @@ nvim
 ```
 
 # Config
+
 - basic
+
 ```bash
 cargo install fd-find # for telescope
 ```
 
 - copilot
+
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash - && sudo apt-get install -y nodejs
 ```
+
 ```nvim
 copilot enable
 copilot auth
 ```
 
-
 - rust
+
 ```bash
 rustup component add rust-analyzer
 ```
 
 # Keymap
+
 ## general <https://www.lazyvim.org/keymaps>
 
 ## Important
 
 ### Buffer
+
 - <leader> bD remove current buffer
 
 ### Windows
+
 - <leader> | spilit window Right
 - <leader> - spilit window below
 
 ### Other
+
 - <leader> gg open lazygit(need to install)
 
 ### UI
+
 - <leader> uD Toggle dimming
 - <leader> uz Enable Zen mode
